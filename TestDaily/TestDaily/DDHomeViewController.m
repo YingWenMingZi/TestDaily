@@ -24,19 +24,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self initNavi];
     [self initSubView];
-    
-    __block int i = 0;
-    if (@available(iOS 10.0, *)){
-      NSTimer *timer = [NSTimer timerWithTimeInterval:1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            self.timeLabel.text = [NSString stringWithFormat:@"%d",i];
-            i++;
-            if (i >= 10) {
-                i = 0;
-            }
-        }];
-        [timer fire];
-    } else {
-    }
 }
 
 - (void)didReceiveMemoryWarning {
