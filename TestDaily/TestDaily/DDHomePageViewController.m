@@ -44,11 +44,13 @@
 -(void)initNav
 {
     self.title = @"日常的练习";
-    //滑动时隐藏searchBar
-    self.navigationItem.hidesSearchBarWhenScrolling = true;
-    //将searchController赋值给navigationItem
-    UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
-    self.navigationItem.searchController = searchController;
+    if (@available(iOS 11.0, *)) {
+        //滑动时隐藏searchBar
+        self.navigationItem.hidesSearchBarWhenScrolling = true;
+        //将searchController赋值给navigationItem
+        UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+        self.navigationItem.searchController = searchController;
+     }
 }
 
 #pragma --mark tableview datasource
