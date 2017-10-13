@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		722D2FF5442565F098EBFF0C /* libPods-TestDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9207D68776A2BE28D6900CCC /* libPods-TestDaily.a */; };
 		B42849A81F8F5BB900103BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849A71F8F5BB900103BB3 /* AppDelegate.m */; };
-		B42849AB1F8F5BB900103BB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849AA1F8F5BB900103BB3 /* ViewController.m */; };
 		B42849AE1F8F5BB900103BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42849AC1F8F5BB900103BB3 /* Main.storyboard */; };
 		B42849B01F8F5BB900103BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42849AF1F8F5BB900103BB3 /* Assets.xcassets */; };
 		B42849B31F8F5BB900103BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42849B11F8F5BB900103BB3 /* LaunchScreen.storyboard */; };
 		B42849B61F8F5BB900103BB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849B51F8F5BB900103BB3 /* main.m */; };
 		B42849C01F8F5BBA00103BB3 /* TestDailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849BF1F8F5BBA00103BB3 /* TestDailyTests.m */; };
 		B42849CB1F8F5BBA00103BB3 /* TestDailyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849CA1F8F5BBA00103BB3 /* TestDailyUITests.m */; };
-		B42849DD1F8F5C3700103BB3 /* DDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849D81F8F5C3700103BB3 /* DDHomeViewController.m */; };
+		B42849DD1F8F5C3700103BB3 /* DDWechatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849D81F8F5C3700103BB3 /* DDWechatViewController.m */; };
 		B42849DE1F8F5C3700103BB3 /* DDConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B42849DB1F8F5C3700103BB3 /* DDConfig.m */; };
+		B473A03E1F909EB30074805B /* DDHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B473A03D1F909EB30074805B /* DDHomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		B42849A31F8F5BB900103BB3 /* TestDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42849A61F8F5BB900103BB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B42849A71F8F5BB900103BB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B42849A91F8F5BB900103BB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B42849AA1F8F5BB900103BB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B42849AD1F8F5BB900103BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42849AF1F8F5BB900103BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42849B21F8F5BB900103BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +53,13 @@
 		B42849C61F8F5BBA00103BB3 /* TestDailyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDailyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42849CA1F8F5BBA00103BB3 /* TestDailyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDailyUITests.m; sourceTree = "<group>"; };
 		B42849CC1F8F5BBA00103BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B42849D81F8F5C3700103BB3 /* DDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHomeViewController.m; sourceTree = "<group>"; };
+		B42849D81F8F5C3700103BB3 /* DDWechatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDWechatViewController.m; sourceTree = "<group>"; };
 		B42849D91F8F5C3700103BB3 /* DDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPrefixHeader.pch; sourceTree = "<group>"; };
 		B42849DA1F8F5C3700103BB3 /* DDConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDConfig.h; sourceTree = "<group>"; };
 		B42849DB1F8F5C3700103BB3 /* DDConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDConfig.m; sourceTree = "<group>"; };
-		B42849DC1F8F5C3700103BB3 /* DDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHomeViewController.h; sourceTree = "<group>"; };
+		B42849DC1F8F5C3700103BB3 /* DDWechatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDWechatViewController.h; sourceTree = "<group>"; };
+		B473A03C1F909EB30074805B /* DDHomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDHomePageViewController.h; sourceTree = "<group>"; };
+		B473A03D1F909EB30074805B /* DDHomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDHomePageViewController.m; sourceTree = "<group>"; };
 		ED8C3786D71DA4B2E3DB84E8 /* Pods-TestDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDaily.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDaily/Pods-TestDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C758A800141AE5B74C5682 /* Pods-TestDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDaily.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDaily/Pods-TestDaily.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,18 +126,17 @@
 			children = (
 				B42849DA1F8F5C3700103BB3 /* DDConfig.h */,
 				B42849DB1F8F5C3700103BB3 /* DDConfig.m */,
-				B42849DC1F8F5C3700103BB3 /* DDHomeViewController.h */,
-				B42849D81F8F5C3700103BB3 /* DDHomeViewController.m */,
+				B473A03B1F909E610074805B /* WeChat */,
 				B42849D91F8F5C3700103BB3 /* DDPrefixHeader.pch */,
 				B42849A61F8F5BB900103BB3 /* AppDelegate.h */,
 				B42849A71F8F5BB900103BB3 /* AppDelegate.m */,
-				B42849A91F8F5BB900103BB3 /* ViewController.h */,
-				B42849AA1F8F5BB900103BB3 /* ViewController.m */,
 				B42849AC1F8F5BB900103BB3 /* Main.storyboard */,
 				B42849AF1F8F5BB900103BB3 /* Assets.xcassets */,
 				B42849B11F8F5BB900103BB3 /* LaunchScreen.storyboard */,
 				B42849B41F8F5BB900103BB3 /* Info.plist */,
 				B42849B51F8F5BB900103BB3 /* main.m */,
+				B473A03C1F909EB30074805B /* DDHomePageViewController.h */,
+				B473A03D1F909EB30074805B /* DDHomePageViewController.m */,
 			);
 			path = TestDaily;
 			sourceTree = "<group>";
@@ -158,6 +157,15 @@
 				B42849CC1F8F5BBA00103BB3 /* Info.plist */,
 			);
 			path = TestDailyUITests;
+			sourceTree = "<group>";
+		};
+		B473A03B1F909E610074805B /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				B42849DC1F8F5C3700103BB3 /* DDWechatViewController.h */,
+				B42849D81F8F5C3700103BB3 /* DDWechatViewController.m */,
+			);
+			path = WeChat;
 			sourceTree = "<group>";
 		};
 		F0554E1539EE2EFF54A1E28E /* Frameworks */ = {
@@ -352,8 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42849AB1F8F5BB900103BB3 /* ViewController.m in Sources */,
-				B42849DD1F8F5C3700103BB3 /* DDHomeViewController.m in Sources */,
+				B42849DD1F8F5C3700103BB3 /* DDWechatViewController.m in Sources */,
+				B473A03E1F909EB30074805B /* DDHomePageViewController.m in Sources */,
 				B42849B61F8F5BB900103BB3 /* main.m in Sources */,
 				B42849A81F8F5BB900103BB3 /* AppDelegate.m in Sources */,
 				B42849DE1F8F5C3700103BB3 /* DDConfig.m in Sources */,

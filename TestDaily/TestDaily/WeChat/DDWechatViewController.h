@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DDHomeViewController : UIViewController
+@interface DDWechatViewController : UIViewController
 
 @end

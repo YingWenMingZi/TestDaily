@@ -6,9 +6,9 @@
 //  Copyright © 2017年 dengyuchi. All rights reserved.
 //
 
-#import "DDHomeViewController.h"
+#import "DDWechatViewController.h"
 
-@interface DDHomeViewController ()<UITextViewDelegate>
+@interface DDWechatViewController ()<UITextViewDelegate>
 
 @property(nonatomic, strong)UIButton         *sendButton;
 @property(nonatomic, strong)UILabel          *intervalTimeLabel;        //间隔时间
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation DDHomeViewController
+@implementation DDWechatViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,12 +37,15 @@
 
 -(void)initNavi
 {
-    [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[UIColor redColor]] forBarMetrics:(UIBarMetricsDefault)];
-    UILabel *titleLabel = [[UILabel alloc]init];
-    titleLabel.text = @"测试的日常";
-    titleLabel.textColor = [UIColor blackColor];
-    titleLabel.font = [UIFont systemFontOfSize:18];
-    self.navigationItem.titleView = titleLabel;
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = NO;
+    }
+//    [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[UIColor redColor]] forBarMetrics:(UIBarMetricsDefault)];
+//    UILabel *titleLabel = [[UILabel alloc]init];
+//    titleLabel.text = @"测试的日常";
+//    titleLabel.textColor = [UIColor blackColor];
+//    titleLabel.font = [UIFont systemFontOfSize:18];
+//    self.navigationItem.titleView = titleLabel;
 }
 
 -(void)initSubView
@@ -58,7 +61,7 @@
     }];
     
     [self.sendContentTextView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(150 * DD_SCREEN_SCALE);
+        make.top.mas_equalTo(250 * DD_SCREEN_SCALE);
         make.width.mas_equalTo(DD_SCREEN_WIDTH - 40 * DD_SCREEN_SCALE);
         make.height.mas_equalTo(80 * DD_SCREEN_SCALE);
         make.centerX.mas_equalTo(self.view);
